@@ -10,26 +10,54 @@ body {
   font-family: "Franklin Gothic Medium", Arial;
 }
 
+header {
+  color: #f3f3f3;
+}
+
 h2 {
   color: #f3f3f3;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 
-.card-container {
+.ProductCard {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  max-width: 1024px;
-  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid #4b5362;
+  width: 100%;         
+  max-width: 240px;    
+  box-sizing: border-box;
+  padding: 16px;
+  background-color: #31363f;
+  border-radius: 5px;
+  min-height: 240px;
+  text-align: center;
 }
 
-.card {
-  border: 1px solid #4b5362;
-  padding: 20px;
-  margin: 10px;
-  background-color: #31363f;
-  border-radius: 10px;
-  min-height: 100px;
+.bottom {
+  position: relative;
+  bottom: -20px;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+}
+
+.ProductCard h2 {
+  min-height: 60px;     
+  line-height: 1.2;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ProductCard img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
 }

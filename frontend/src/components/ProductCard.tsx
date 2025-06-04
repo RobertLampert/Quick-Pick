@@ -19,14 +19,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, image='no-image-found.
   };
 
   return (
-    <div className="card">
+    <div className="ProductCard">
       <h2>{title}</h2>
-      <img src={image} alt={title} style={{ width: '200px' }} />
-      <p>
+      <img src={image} alt={title} />
+      
+      <div className="bottom">
         <AddButton onAdd={handleAdd} />
-        Count: {count}
+        <span>Count: {count}</span>
         <SubButton onSub={handleSub} />
-      </p>
+      </div>
     </div>
   )
 }
