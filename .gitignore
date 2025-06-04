@@ -1,5 +1,6 @@
 node_modules
 package-lock.json
 backend.zip
+images/
 *.ppk
 *.pem
