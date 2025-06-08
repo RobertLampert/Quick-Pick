@@ -2,5 +2,6 @@ node_modules
 package-lock.json
 backend.zip
 images/
+/frontend/public/
 *.ppk
 *.pem
